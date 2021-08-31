@@ -37,7 +37,6 @@ public class BinaryTreeIntro {
 
 		return root;
 	}
-	
 	static void inOrder(Node root) {
 		// Left-Node-Right
 		if(root == null) return;
@@ -46,7 +45,6 @@ public class BinaryTreeIntro {
 		System.out.println(root.data);
 		inOrder(root.rightNode);
 	}
-	
 	static void preOrder(Node root) {
 		// Node-Left-Right
 		if(root == null) return;
@@ -55,7 +53,6 @@ public class BinaryTreeIntro {
 		preOrder(root.leftNode);
 		preOrder(root.rightNode);
 	}
-	
 	static void postOrder(Node root) {
 		// Left-Right-Node
 		if(root == null) return;
